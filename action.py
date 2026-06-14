@@ -19,12 +19,6 @@ def Action(data):
         text_to_speech.text_to_speech('You are not alone. I am here with you.')
         return 'You are not alone. I am here with you.'
     
-    elif any(word in user_data for word in [
-            "madharchod", "madarchod", "madar chod",
-            "bosdike", "bhosdike", "bhosadi ke",
-            "bhosadike", "bhosadike", "bhosdi ke"]):
-        text_to_speech.text_to_speech("teri maa ki choot")
-        return "teri maa ki choot"
 
     elif "hello" in user_data:
         text_to_speech.text_to_speech("Hello, how can I assist you today?")
